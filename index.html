@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="uk">
+
+        <img src="asset/logo.png" class="logo" alt="">
+
+        <div class="bentuk">
+
+            <h3>Shape :</h3>
+
+            <label class="ngotak">
+                <input type="radio" name="shape" class="yes" checked>
+                <h1  style=" color: white;font-size: 25px;">
+                    ■
+                </h1>
+            </label>
+
+            <label class="ngulet">
+                <input type="radio" name="shape" class="no">
+                <h1 style="color: white; font-size: 15px;">
+                    ⬤
+                </h1>
+            </label>
+
+        </div>
+
+        <div class="sizeBox">
+
+            <h3>size :</h3>
+
+            <input type="range" id="besar">
+
+            <h3><span class="size">20</span> px</h3>
+
+        </div>
+
+        <div class="opacity">
+
+            <h3>opacity :</h3>
+
+            <input type="range" id="opacity">
+
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <!-- kiri -->
+        <div class="toolbar">
+
+            <button class="tool active">Brush</button>
+            <button class="tool">Bucket</button>
+            <button class="tool">Eraser</button>
+            <button class="tool">Text</button>
+            <button class="tool">Move</button>
+            <button class="tool">Stamp</button>
+            <button class="tool">Picker</button>
+            <button class="tool">Shape</button>
+
+            <div class="bottomTools">
+
+                <button>Undo</button>
+                <button>Redo</button>
+
+                <button>Zoom +</button>
+                <button>Zoom -</button>
+
+                <button>Import</button>
+                <button>Export</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- tengah -->
+        <div class="anu">
+
+            <canvas class="wadah"></canvas>
+
+        </div>
+
+
+        <!-- kanan -->
+        <div class="ukuran">
+
+            <div class="hasil"></div>
+
+            <div class="red">
+                <h3>Red</h3>
+                <input type="range" id="red" min="0" max="255">
+            </div>
+
+            <div class="green">
+                <h3>Green</h3>
+                <input type="range" id="green" min="0" max="255">
+            </div>
+
+            <div class="blue">
+                <h3>Blue</h3>
+                <input type="range" id="blue" min="0" max="255">
+            </div>
+
+            <div class="layer">
+
+                <button>Layer 2</button>
+                <button>Layer 1</button>
+                <button>Background</button>
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

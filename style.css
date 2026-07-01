@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#363646;
+    font-family:Arial;
+    overflow:hidden;
+}
+
+/*================ TOP =================*/
+.ngulet,
+.ngotak{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.uk{
+
+    height:60px;
+    background:#55556a;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 20px;
+    gap:30px;
+
+}
+
+.logo{
+
+    width:60px;
+
+}
+
+.sizeBox{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.opacityTop{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.bentuk{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+/*================ CONTENT =================*/
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr 230px;
+
+    height:calc(100vh - 60px);
+
+}
+
+/*================ TOOLBAR =================*/
+
+.toolbar{
+
+    background:#4a4a5d;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:8px;
+
+    padding:10px;
+
+}
+
+.tool{
+
+    height:45px;
+
+    border:none;
+
+    border-radius:5px;
+
+}
+
+.active{
+
+    background:#7676ff;
+    color:white;
+
+}
+
+.bottomTools{
+
+    grid-column:1/3;
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+/*================ CANVAS =================*/
+
+.anu{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#2f2f3c;
+
+}
+
+.wadah{
+
+    width:1024px;
+
+    height:600px;
+
+    background:white;
+
+}
+
+/*================ RIGHT =================*/
+
+.ukuran{
+
+    background:#4a4a5d;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:15px;
+
+}
+
+.hasil{
+
+    height:70px;
+
+    background:limegreen;
+
+    border-radius:5px;
+
+}
+
+.red,
+.green,
+.blue{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.red input{
+
+    accent-color:red;
+
+}
+
+.green input{
+
+    accent-color:lime;
+
+}
+
+.blue input{
+
+    accent-color:royalblue;
+
+}
+
+.layer{
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.layer button{
+
+    height:35px;
+
+}
